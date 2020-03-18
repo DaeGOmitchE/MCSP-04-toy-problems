@@ -11,5 +11,13 @@
  */
 
 var commonCharacters = function(string1, string2) {
+  //make a storage array
+  var newStr = "";
+
+  //combine the strings
+  //iterate thru string
+  //put letter in storage that appear twice
+  
+
   // TODO: Your code here!
 };
