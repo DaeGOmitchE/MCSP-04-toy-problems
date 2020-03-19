@@ -13,5 +13,14 @@
  */
 
 var allAnagrams = function(string) {
-  // Your code here.
+  // make a result variable for letter combos
+  var result = [];
+  //access each element
+   string.substring(1,3) {
+
+    //push result of substring to array and repeat
+
+   }
+
+  //
 };
