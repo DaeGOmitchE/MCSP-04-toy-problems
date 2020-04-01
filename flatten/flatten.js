@@ -10,9 +10,27 @@
 
 function flatten(array) {
 
-    //turn array into a string
-    return array.join().split;
+    //declare a result variable empty array
+    let result = [];
+    ///make a helper function
+    let assist = (array) => {
+        //iterate over the input array
+        for (let i = 0; i < array.length; i++) {
+            //make a variable for the element at each index
+            let ele = array[i];
+            //the element is not and array 
+            //store in result variable
+            if (!Array.isArray(ele)) {
+                result.push(ele);
+                //else
+            } else {
+                //call helper function on the arrayelement
+                assist(ele);
+            }
+        }
+    }
+}
 
     //turn string into a new array
 
-}
+
