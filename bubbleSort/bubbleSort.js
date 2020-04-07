@@ -8,5 +8,28 @@
 // Implement a function that takes an array and sorts it using this technique.
 
 // NOTE: DO NOT use JavaScript’s built-in sorting function (Array.prototype.sort).
+//I- an unsorted array
+//O-a sorted array w/ largest value at the end of the array
+//C- assuming we leave the original array unchanged
+//E-
 
-function bubbleSort(array) {}
+    function bubbleSort(array) {
+        //copy original array
+         var isSortedArr = array.slice();
+         //iterate thur isSortedArr
+         for ( var i = 0; i < isSortedArr.length; i++){
+           if (isSortedArr[i] >isSortedArr[i+1]) {
+             //swap
+             var swap = isSortedArr[i];
+            isSortedArr[i] = isSortedArr[i];
+            isSortedArr[i+1] = swap;
+           
+     
+         }
+     
+       return isSortedArr;
+     }
+     
+     bubbleSort([9, 6, 3, 2]);
+
+};
