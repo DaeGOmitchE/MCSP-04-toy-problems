@@ -35,6 +35,13 @@
 
 // This function is to help you test, and should not be incorporated in your solution.
 // It will transform an array of numbers into an array of valid objects.
+
+//I - an array of numbers
+//O- a sorted array of objects
+//C - duplicate elements keep there place
+//E-
+
+
 var testingTransform = function(array) {
   var transform = [];
 
@@ -45,7 +52,21 @@ var testingTransform = function(array) {
   return transform;
 };
 
-var insertionSort = function(array) {
-  // Your code goes here. Feel free to add helper functions if needed.
-  return array;
+var insertionSort = function (array) {
+  var sortedArr = array.sort();
+
+  for (var i = 0; i < sortedArr.length; i++) {
+
+    if (sortedArr[i] > sortedArr[i + 1]) {
+
+      var swap = sortedArr[i];
+      sortedArr[i] = sortedArr[i];
+      sortedArr[i + 1] = swap;
+
+    }
+    return sortedArr;
+  }
 };
+
+insertionSort([4, 3, 6, 2, 1]);
+
