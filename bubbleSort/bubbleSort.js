@@ -16,6 +16,7 @@
     function bubbleSort(array) {
         //copy original array
          var isSortedArr = array.slice();
+         
          //iterate thur isSortedArr
          for ( var i = 0; i < isSortedArr.length; i++){
            if (isSortedArr[i] >isSortedArr[i+1]) {

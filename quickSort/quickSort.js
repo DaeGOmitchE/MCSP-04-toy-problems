@@ -11,3 +11,15 @@
  */
 
 var quicksort = function(array) {};
+
+//iterate over the array
+
+//ID pivot and left and right variables
+
+//if the element is smaller than the pivot elem
+//push to left variable
+//if the element is larger than the pivot elem
+//push to right ele
+//return left and right elements
+
+//
