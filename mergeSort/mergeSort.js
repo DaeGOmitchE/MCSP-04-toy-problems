@@ -96,6 +96,12 @@
  */
 
 var mergeSort = function(array) {
+
+  // make left and right variables
+  // iterate over the array
+  //divide array into halfs
+  //untill seperated into individual array elements
+  //
   // Your code here.
 };
 
