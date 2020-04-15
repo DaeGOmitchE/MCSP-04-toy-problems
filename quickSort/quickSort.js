@@ -11,6 +11,8 @@
  */
 
 var quicksort = function(array) {};
+//partition
+//pivot
 
 //iterate over the array
 
