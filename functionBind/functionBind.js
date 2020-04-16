@@ -24,7 +24,22 @@
  */
 
 var bind = function() {
-  // TODO: Your code here
+  // a morning walk object 
+  var morningWalk = {
+    name: 'Khal',
+    goPoop: function(){
+      onCommand(this.name);
+    }
+  }
+  //goPoop is bound to morning walk, the function goPoop to the name 'Khal
+  var boundGoPoop = bind(morningWalk.goPoop, 'khal');
+  //tell khal to goPoop on command
+  boundGoPoop(); 
+  //binds goPoop function to the name Mitch
+  boundGoPoop = bind(khal.goPoop, {name: 'mitch'})
+  // tell mitch  to goPoop on command
+  boundGoPoop();
+
 };
 
 /*

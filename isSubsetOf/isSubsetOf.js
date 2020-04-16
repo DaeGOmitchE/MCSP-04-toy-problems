@@ -23,7 +23,7 @@
 
 Array.prototype.isSubsetOf = function(arr) {
   //declare variable for subArray
-  let subArr = [];
+  let subArr = subArr;
   //iterate over the subArray
   for ( let j = 0; j < subArr.length; i++) {
     //iterate over the arr (the 'parent' arr)
