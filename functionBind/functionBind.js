@@ -23,24 +23,25 @@
  *
  */
 
-var bind = function() {
-  // a morning walk object 
-  var morningWalk = {
-    name: 'Khal',
-    goPoop: function(){
-      onCommand(this.name);
-    }
+var bind = function(func, args) {
+  return function() {
+    func.call(args);
   }
-  //goPoop is bound to morning walk, the function goPoop to the name 'Khal
-  var boundGoPoop = bind(morningWalk.goPoop, 'khal');
-  //tell khal to goPoop on command
-  boundGoPoop(); 
-  //binds goPoop function to the name Mitch
-  boundGoPoop = bind(khal.goPoop, {name: 'mitch'})
-  // tell mitch  to goPoop on command
-  boundGoPoop();
-
 };
+Function.prototype.bind = function(args){
+  var t = this;
+  return function() {
+    t.apply(args, param);
+    
+  }
+}
+Function.prototype.bind = function(args){
+  var argue = Array.prototype.slice.call(arguments);
+  var t = this;
+  return function(){
+    t.apply(arg, argue.concat(arguments));
+  }
+}
 
 /*
  * Function.prototype.bind:
