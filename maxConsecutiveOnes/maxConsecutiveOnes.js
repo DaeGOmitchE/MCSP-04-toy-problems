@@ -4,7 +4,7 @@
 // I: takes in an array of numbers
 // 0: return the mav numdrt of concecutive 1s.
 // C:
-// E:
+// E: .random
 function maxConsecutiveOnes(array) {
   // identify a variable for count of ones
   var count = 0;
